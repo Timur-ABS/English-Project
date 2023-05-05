@@ -1,19 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ping Pong Game</title>
-    <style>
-        canvas {
-            display: block;
-            margin: 0 auto;
-            background-color: #000;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Замки</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('your-grass-image.jpg');
+    background-repeat: repeat;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .castle-container {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .castle {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .castle-health {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+</style>
 </head>
 <body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
-    <script src="game.js"></script>
+<div class="row">
+  <div class="castle-container">
+    <img src="castle-red-main.png" alt="Главный красный замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+</div>
+<div class="row">
+  <div class="castle-container">
+    <img src="castle-red-100.png" alt="Красный замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+  <div class="castle-container">
+    <img src="castle-red-100.png" alt="Красный замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+  <div class="castle-container">
+    <img src="castle-red-100.png" alt="Красный замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+</div>
+<div class="row">
+  <div class="castle-container">
+    <img src="castle-blue-100.png" alt="Синий замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+  <div class="castle-container">
+    <img src="castle-blue-100.png" alt="Синий замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+  <div class="castle-container">
+    <img src="castle-blue-100.png" alt="Синий замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+</div>
+<div class="row">
+  <div class="castle-container">
+    <img src="castle-blue-main.png" alt="Главный синий замок" class="castle">
+    <div class="castle-health">100%</div>
+  </div>
+</div>
 </body>
 </html>
