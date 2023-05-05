@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Простое мини-приложение</title>
+    <title>Ping Pong Game</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
         }
-        h1 {
-            font-size: 2rem;
-            color: #333;
-        }
-
     </style>
 </head>
 <body>
-<h1>Добро пожаловать в простое мини-приложение Телеграм!</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script src="game.js"></script>
 </body>
 </html>
